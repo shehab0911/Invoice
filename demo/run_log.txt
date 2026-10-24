@@ -1,0 +1,70 @@
+API healthy – currently 0 invoices registered
+Cleared 0 existing invoices
+
+Processing invoice_01.pdf
+  Matched partner P-1001 (株式会社山田製作所)
+  Registered → ACC-0001
+
+Processing invoice_02.pdf
+  Matched partner P-1004 (大阪機械工業株式会社)
+  Registered → ACC-0002
+
+Processing invoice_03.pdf
+  Matched partner P-1003 (東京フーズ株式会社)
+  Registered → ACC-0003
+
+Processing invoice_04.jpg
+  Matched partner P-1002 (有限会社佐藤商店)
+  Registered → ACC-0004
+
+Processing invoice_05.jpg
+  Matched partner P-1005 (みらいITソリューションズ株式会社)
+  Registered → ACC-0005
+
+Processing invoice_06.jpg
+  Matched partner P-1001 (ヤマダ製作所)
+  Registered → ACC-0006
+
+Processing invoice_07.jpg
+  Matched partner P-1001 (株式会社山田製作所)
+  API rejected DUPLICATE_INVOICE: This invoice number is already registered for 
+this partner
+
+Processing invoice_08.jpg
+  Matched partner P-1003 (東京フーズ株式会社)
+  Registered → ACC-0007
+
+Processing invoice_09.pdf
+  Verification failed: ['total_amount mismatch: extracted=147497, 
+recalculated=147496']
+
+Processing invoice_10.jpg
+  Unknown partner: 新星ロジスティクス株式会社
+
+Processing invoice_11.jpg
+  Matched partner P-1002 (有限会社佐藤商店)
+  Registered → ACC-0008
+
+Processing invoice_12.jpg
+  Matched partner P-1005 (みらいITソリューションズ株式会社)
+  Registered → ACC-0009
+
+Review queue written to review_queue.json
+                               Processing Summary                               
+┏━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File           ┃ Result ┃ Detail                                             ┃
+┡━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ invoice_01.pdf │ OK     │ ACC-0001                                           │
+│ invoice_02.pdf │ OK     │ ACC-0002                                           │
+│ invoice_03.pdf │ OK     │ ACC-0003                                           │
+│ invoice_04.jpg │ OK     │ ACC-0004                                           │
+│ invoice_05.jpg │ OK     │ ACC-0005                                           │
+│ invoice_06.jpg │ OK     │ ACC-0006                                           │
+│ invoice_07.jpg │ FAIL   │ DUPLICATE_INVOICE                                  │
+│ invoice_08.jpg │ OK     │ ACC-0007                                           │
+│ invoice_09.pdf │ REVIEW │ total_amount mismatch: extracted=147497,           │
+│                │        │ recalculated=147496                                │
+│ invoice_10.jpg │ REVIEW │ PARTNER_NOT_FOUND: 新星ロジスティクス株式会社      │
+│ invoice_11.jpg │ OK     │ ACC-0008                                           │
+│ invoice_12.jpg │ OK     │ ACC-0009                                           │
+└────────────────┴────────┴────────────────────────────────────────────────────┘

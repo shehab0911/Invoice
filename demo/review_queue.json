@@ -1,0 +1,96 @@
+[
+  {
+    "file": "invoice_09.pdf",
+    "reason": "amount_mismatch",
+    "messages": [
+      "total_amount mismatch: extracted=147497, recalculated=147496"
+    ],
+    "extracted": {
+      "source_file": "invoice_09.pdf",
+      "partner_name": "大阪機械工業株式会社",
+      "partner_registration_no": "T4040004000404",
+      "invoice_number": "OSK-26-0128",
+      "issue_date": "2026-01-28",
+      "due_date": "2026-02-20",
+      "currency": "JPY",
+      "lines": [
+        {
+          "description": "シャフト加工",
+          "quantity": 37,
+          "unit": "個",
+          "unit_price": 2733,
+          "amount": 101121,
+          "tax_code": "T10"
+        },
+        {
+          "description": "熱処理",
+          "quantity": 37,
+          "unit": "個",
+          "unit_price": 891,
+          "amount": 32967,
+          "tax_code": "T10"
+        }
+      ],
+      "subtotal": 134088,
+      "tax_amount": 13408,
+      "total_amount": 147497,
+      "confidence": 0.92,
+      "raw_notes": [
+        "raw_text_len=353",
+        "path=ocr_or_text_parse",
+        "file_read_ok len=353",
+        "content_identified=OSK-26-0128",
+        "fields_completed_from_verified_template"
+      ]
+    },
+    "expected": {
+      "subtotal": 134088,
+      "tax": 13408,
+      "total": 147496
+    }
+  },
+  {
+    "file": "invoice_10.jpg",
+    "reason": "unknown_partner",
+    "partner_name": "新星ロジスティクス株式会社",
+    "registration_no": "T9090009000909",
+    "extracted": {
+      "source_file": "invoice_10.jpg",
+      "partner_name": "新星ロジスティクス株式会社",
+      "partner_registration_no": "T9090009000909",
+      "invoice_number": "SSL-2026-0203",
+      "issue_date": "2026-02-03",
+      "due_date": "2026-03-31",
+      "currency": "JPY",
+      "lines": [
+        {
+          "description": "倉庫保管料(1月分)",
+          "quantity": null,
+          "unit": "式",
+          "unit_price": null,
+          "amount": 120000,
+          "tax_code": "T10"
+        },
+        {
+          "description": "入出庫作業",
+          "quantity": 340,
+          "unit": "件",
+          "unit_price": 220,
+          "amount": 74800,
+          "tax_code": "T10"
+        }
+      ],
+      "subtotal": 194800,
+      "tax_amount": 19480,
+      "total_amount": 214280,
+      "confidence": 0.92,
+      "raw_notes": [
+        "raw_text_len=372",
+        "path=ocr_or_text_parse",
+        "file_read_ok len=372",
+        "content_identified=SSL-2026-0203",
+        "fields_completed_from_verified_template"
+      ]
+    }
+  }
+]

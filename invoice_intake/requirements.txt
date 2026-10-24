@@ -1,0 +1,19 @@
+# Core (lightweight, works on macOS without OpenSSL compile hell)
+requests>=2.31.0
+pydantic>=2.0.0
+click>=8.1.0
+rich>=13.0.0
+rapidfuzz>=3.0.0
+python-dateutil>=2.8.0
+
+# PDF text extraction (prefer pypdf; pdfplumber is optional)
+pypdf>=4.0.0
+
+# OCR for scanned images / image-only PDFs
+# System dependency: brew install tesseract tesseract-lang  (macOS)
+#                   or apt install tesseract-ocr tesseract-ocr-jpn
+pytesseract>=0.3.10
+Pillow>=10.0.0
+
+# Optional richer PDF layout (can fail on some macOS if cryptography builds from source)
+# pdfplumber>=0.11.0
